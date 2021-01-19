@@ -37,6 +37,14 @@ void setup() {
   Serial.print("El sensor comienza a calentar");
   //Inicializo la pantalla
   u8g2.begin();
+  u8g2.clearBuffer();          // clear the internal memory
+  u8g2.setFont(u8g2_font_6x12_me); // choose a suitable
+  u8g2.setCursor (0,14);
+  u8g2.print("Inicio calentamiento");
+  u8g2.setCursor (0,28);
+  u8g2.print("esperar 20'");
+  u8g2.sendBuffer();          // transfer internal memory to the display
+  delay(20000);
 }
 
 void loop() {
