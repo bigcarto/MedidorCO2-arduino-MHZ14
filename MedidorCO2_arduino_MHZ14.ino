@@ -58,9 +58,9 @@ void loop() {
     delay(2000);
     if (ppmV > 700){
     u8g2.clearBuffer();          // clear the internal memory
-    u8g2.setFont(u8g2_font_logisoso24_tr); // choose a suitable
+    u8g2.setFont(u8g2_font_logisoso18_tr); // choose a suitable
     u8g2.setCursor (0,28);
-    u8g2.print("VENTILA");
+    u8g2.print("VENTILAR");
     u8g2.sendBuffer();          // transfer internal memory to the display
     delay(2000);
     }
